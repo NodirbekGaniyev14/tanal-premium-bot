@@ -1,0 +1,9 @@
+# Bazada ham, ish papkasida ham LF — skriptlar Linux VPS da ishlaydi.
+* text=auto eol=lf
+
+*.xlsx binary
+*.pdf binary
+*.png binary
+*.jpg binary
+*.mp3 binary
+*.ogg binary

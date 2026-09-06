@@ -1,0 +1,22 @@
+[project]
+name = "tanal-premium-bot"
+version = "0.1.0"
+description = "Yopiq kurs uchun yordamchi ustoz Telegram boti"
+requires-python = ">=3.12"
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
+asyncio_mode = "auto"
+
+[tool.ruff]
+line-length = 95
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B", "SIM"]
+ignore = ["B008"]
+
+[tool.ruff.lint.per-file-ignores]
+# Shablon izohlari — o'quvchi/admin o'qiydigan matn, bo'linmaydi.
+"tools/make_templates.py" = ["E501"]
