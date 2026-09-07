@@ -15,7 +15,7 @@ Stack: Python 3.12 · aiogram 3 · PostgreSQL 16 · Redis · Docker Compose ·
 |---|---|---|
 | 1. Skelet, kirish, oqimlar | ✅ | Docker, migratsiyalar, `/start` → raqam → avtomatik ochilish, `AccessMiddleware`, oqimlar, `access_until` |
 | 2. Kontent importi va PDF nusxalash | ✅ | 4 ta Excel importi (qator raqamli xatolar bilan), fayl yuklash → `file_id`, ism yozilgan PDF + kesh |
-| 3. Javob dvigateli | ✅ | Parser · tasdiqlash ekrani · normalizatsiya · baholash · daraja · «noto'g'ri baholandi» signali · **95 avtotest** |
+| 3. Javob dvigateli | ✅ | Parser · tasdiqlash ekrani · normalizatsiya · baholash · daraja · «noto'g'ri baholandi» signali · **avtotestlar bilan** |
 | 4. Grammatika | ✅ | Mavzular, qulf (`requires`), urinishlar cheklovi, mocklar |
 | 5. O'qish & Eshitish | ✅ | Reading/Listening mocklari, audio va qayta tinglash |
 | 6. Yozish (Gemini) | ✅ | Topshiriq banki, ko'p varaqli insho rasmi, structured JSON, kunlik limit, tuzatilgan matn |
@@ -72,7 +72,7 @@ python -m venv .venv
 python -m tools.make_templates
 ```
 
-`templates/` papkasida to'rtta fayl paydo bo'ladi — har birida namuna qatorlar
+`templates/` papkasida beshta fayl paydo bo'ladi — har birida namuna qatorlar
 va `izoh` varag'i:
 
 | Fayl | Nima uchun |
